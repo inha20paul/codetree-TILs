@@ -11,4 +11,4 @@ for i in arr:
 
 avg=sum/cnt
 
-print(f'{avg:.1f}')
+print(f'{sum} {avg:.1f}')

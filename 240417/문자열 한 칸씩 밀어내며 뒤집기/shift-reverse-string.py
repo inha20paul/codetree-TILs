@@ -9,5 +9,5 @@ for i in range(int(q)):
         elif request==2:
             arr=list(arr[-1])+arr[:-1]
         elif request==3:
-            arr=[elem for elem in arr[::-1]]
+            arr=arr[::-1]
     print(''.join(arr))

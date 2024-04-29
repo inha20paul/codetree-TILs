@@ -3,7 +3,7 @@ def isPrime(n):
         if n%i==0:
             return False
     return True
-arr=[]
+arr=[0]
 a,b=map(int,input().split())
 for j in range(a,b+1):
     if isPrime(j):

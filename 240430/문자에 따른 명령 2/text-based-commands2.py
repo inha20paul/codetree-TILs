@@ -13,7 +13,7 @@ dy=[1,0,-1,0]
 for i in string:
     # 반시계 회전
     if i=='L':
-        dir_num=(4+dir_num-1)%4
+        dir_num=(dir_num-1)%4
     # 시계방향 회전
     elif i=='R':
         dir_num=(dir_num+1)%4

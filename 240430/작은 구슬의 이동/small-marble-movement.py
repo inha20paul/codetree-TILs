@@ -28,6 +28,6 @@ for i in range(t):
         c+=dx[direction]
         r+=dy[direction]
     else:
-        direction=abs(direction-3)
+        direction=3-direction
 
 print(r,c)

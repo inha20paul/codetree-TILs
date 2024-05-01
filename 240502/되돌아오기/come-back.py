@@ -11,6 +11,11 @@ mapping={
 dx=[1,-1,0,0]
 dy=[0,0,-1,1]
 
+def atHome(x,y):
+    return x==0 and y==0
+
+homeIn=False
+
 for i in range(N):
     way,num=input().split()
     num=int(num)
@@ -19,6 +24,9 @@ for i in range(N):
         x+=dx[direction]
         y+=dy[direction]
         cnt+=1
-        if x==0 and y==0:
+        if atHome(x,y):
             print(cnt)
-            break
+            homeIn=True
+
+if not homeIn:
+    print(-1)

@@ -27,6 +27,8 @@ for i in range(N):
         if atHome(x,y):
             print(cnt)
             homeIn=True
+    if homeIn:
+        break
 
 if not homeIn:
     print(-1)

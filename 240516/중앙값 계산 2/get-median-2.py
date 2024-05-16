@@ -1,5 +1,5 @@
 n=int(input())
-arr=list(input().split())
+arr=list(map(int,input().split()))
 arr2=[]
 
 for i in range(n):

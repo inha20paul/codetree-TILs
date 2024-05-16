@@ -34,5 +34,7 @@ def whatWeather(Y,M,D):
             print("Fall")
         else:
             print("Winter")
+    else:
+        print(-1)
 
 whatWeather(Y,M,D)

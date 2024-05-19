@@ -1,16 +1,11 @@
 N=int(input())
-ans=0
-def f(N):
-    global ans
-    nxtN=0
-    if N==1:
-        return
-    if N%2==0:
-        nxtN=int(N/2)
-    else:
-        nxtN=int(N//3)
-    ans+=1
-    f(nxtN)
 
-f(N)
-print(ans)
+def f(N):
+    if N==1:
+        return 0
+    if N%2==0:
+        return f(N//2)+1
+    else:
+        return f(N//3)+1
+    
+print(f(N))

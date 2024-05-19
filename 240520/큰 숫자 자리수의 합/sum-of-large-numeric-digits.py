@@ -3,6 +3,6 @@ num=a*b*c
 def f(num):
     if num<10:
         return num
-    return num+f(num%10)
+    return num%10+f(num//10)
 
 print(f(num))

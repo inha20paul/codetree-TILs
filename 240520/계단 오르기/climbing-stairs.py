@@ -10,4 +10,4 @@ def f(n):
         memo[n]=f(n-2)+f(n-3)
     return memo[n]
 
-print(f(n))
+print(f(n)%10007)

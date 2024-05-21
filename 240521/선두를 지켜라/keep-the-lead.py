@@ -18,7 +18,7 @@ for i in range(M):
         arrB.append(B)
 
 state=''
-cnt=0
+cnt=-1
 for i in range(len(arrA)):
     prev=state
     if arrA[i]>arrB[i]:
@@ -27,5 +27,8 @@ for i in range(len(arrA)):
         state='B'
     if state!=prev:
         cnt+=1
-
-print(cnt-1)
+   
+if cnt==-1:
+    print(0)
+else:
+    print(cnt)

@@ -11,8 +11,11 @@ dirr=0
 dr=[0,1,0,-1]
 dc=[1,0,-1,0]
 
+# Z에서 A로 넘어갈때 = %num
+num=ord('Z')-ord('A')+1
+
 for i in range(n*m):
-    string=chr(ord('A')+i)
+    string=chr(ord('A')+i%num)
     arr[r][c]=string
 
     nr=r+dr[dirr]

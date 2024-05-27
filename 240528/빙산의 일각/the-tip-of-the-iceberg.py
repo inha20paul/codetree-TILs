@@ -1,5 +1,12 @@
 N=int(input())
-H=[int(input()) for _ in range(N)]
+H=[]
+m=[]
+
+for i in range(N):
+    h=int(input())
+    H.append(h)
+    if h not in m:
+        m.append(h)
 
 def count_ice(height):
     cnt=0
@@ -15,7 +22,7 @@ def count_ice(height):
 
 ans=0
 
-for i in H:
+for i in m:
     ans=max(ans,count_ice(i))
 
 print(ans)

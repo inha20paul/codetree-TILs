@@ -1,7 +1,7 @@
 col,cod,sec=input().split()
 
 class A:
-    def __init__(col,cod,sec):
+    def __init__(self,col,cod,sec):
         self.col=col
         self.cod=cod
         self.sec=sec

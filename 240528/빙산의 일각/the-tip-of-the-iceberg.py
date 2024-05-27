@@ -1,6 +1,6 @@
 N=int(input())
 H=[int(input()) for _ in range(N)]
-
+H=[elem-min(H)+1 for elem in H]
 def count_ice(height):
     cnt=0
     switch=False

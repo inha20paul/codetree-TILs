@@ -8,5 +8,5 @@ class A:
 p1=A()
 p2=A(prod,code)
 
-print(f'product {p1.prod} is {p1.code}')
-print(f'product {p2.prod} is {p2.code}')
+print(f'product {p1.code} is {p1.prod}')
+print(f'product {p2.code} is {p2.prod}')

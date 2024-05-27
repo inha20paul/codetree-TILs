@@ -21,8 +21,10 @@ def count_ice(height):
     return cnt
 
 ans=0
-
+m.sort()
 for i in m:
+    if ans>count_ice(i):
+        break
     ans=max(ans,count_ice(i))
 
 print(ans)

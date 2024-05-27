@@ -24,3 +24,5 @@ ans=0
 
 for i in m:
     ans=max(ans,count_ice(i))
+
+print(ans)

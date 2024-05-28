@@ -11,8 +11,9 @@ H.append(-1)
 
 idx.sort(key=lambda x:x[0])
 
+
 for tup in idx:
-    mx_idx=tup[1]
+    mx_idx=tup[1]+1
     if H[mx_idx-1]!=0 and H[mx_idx+1]!=0:
         cnt+=1
     elif H[mx_idx-1]==0 and H[mx_idx+1]==0:

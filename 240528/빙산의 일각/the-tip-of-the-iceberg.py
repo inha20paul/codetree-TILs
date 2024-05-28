@@ -9,7 +9,7 @@ for i in range(N):
     idx.append((h,i))
 H.append(-1)
 
-idx.sort(key=lambda x:x[0])
+idx.sort(key=lambda x:x[0],reverse=True)
 
 
 for tup in idx:

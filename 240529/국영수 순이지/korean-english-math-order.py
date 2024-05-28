@@ -1,5 +1,8 @@
 n=int(input())
-arr=[tuple(input().split()) for _ in range(n)]
+arr=[]
+for i in range(n):
+    n,k,e,m=input().split()
+    arr.append(tuple(n,int(k),int(e),int(m)))
 arr.sort(key=lambda x: (x[1],x[2],x[3]))
 arr=arr[::-1]
 

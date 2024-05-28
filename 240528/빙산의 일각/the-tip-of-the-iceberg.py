@@ -27,13 +27,14 @@ def isHigh(a,b):
         return 0
 
 def count_ice(height):
-    cnt=0
-    arr=[isHigh(H[0],height)]
+    cnt=isHigh(H[0],height)
+    arr=[cnt]
     for i in range(1,N):
         n=isHigh(H[i],height)
         if arr[-1]!=n:
             arr.append(n)
-    return sum(arr)
+            cnt+=n
+    return cnt
 
 ans=0
 for i in m:

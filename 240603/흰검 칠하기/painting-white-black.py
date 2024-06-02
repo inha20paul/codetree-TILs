@@ -25,17 +25,17 @@ g=0
 for i in range(len(visit)):
     num=visit[i]
     if i>=-min(arr):
-        if num%2==1:
-            b+=1
-        elif num>=4:
+        if num>=4:
             g+=1
+        elif num%2==1:
+            b+=1
         elif num==2:
             w+=1
     else:
-        if num%2==1:
-            w+=1
-        elif num>=4:
+        if num>=4:
             g+=1
+        elif num%2==1:
+            w+=1
         elif num==2:
             b+=1
 print(w,b,g)

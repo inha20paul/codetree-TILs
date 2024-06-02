@@ -34,7 +34,7 @@ for i in range(len(visit)):
     else:
         if num%2==1:
             w+=1
-        elif num==4:
+        elif num>=4:
             g+=1
         elif num==2:
             b+=1

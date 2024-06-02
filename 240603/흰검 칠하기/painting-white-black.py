@@ -27,7 +27,7 @@ for i in range(len(visit)):
     if i>=-min(arr):
         if num%2==1:
             b+=1
-        elif num==4:
+        elif num>=4:
             g+=1
         elif num==2:
             w+=1

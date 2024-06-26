@@ -32,4 +32,4 @@ for j in range(len(arr)):
     elif arr[j]==-1:
         w+=1
 
-print(g,b,w)
+print(w,b,g)

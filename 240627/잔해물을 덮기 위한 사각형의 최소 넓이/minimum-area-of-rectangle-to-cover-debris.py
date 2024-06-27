@@ -20,11 +20,16 @@ for i in range(x1,x2):
 
 start_x,start_y,end_x,end_y=1000,1000,1000,1000
 
+first=True
+
 for i in range(2000):
     for j in range(2000):
         if arr[i][j]==1:
+            if first:
+                start_x,start_y=j,i
+                first=False
             start_x=min(start_x,j)
-            start_y=min(start_x,i)
+            start_y=min(start_y,i)
             end_x=max(end_x,j)
             end_y=max(end_y,i)
 

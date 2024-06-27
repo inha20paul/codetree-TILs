@@ -26,7 +26,8 @@ for i in range(2000):
     for j in range(2000):
         if arr[i][j]==1:
             if first:
-                start_x,start_y=j,i
+                start_x,end_x=j,j
+                start_y,end_y=i,i
                 first=False
             start_x=min(start_x,j)
             start_y=min(start_y,i)

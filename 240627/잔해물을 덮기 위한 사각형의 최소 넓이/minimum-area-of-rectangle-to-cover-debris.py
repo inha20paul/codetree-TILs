@@ -18,15 +18,15 @@ for i in range(x1,x2):
     for j in range(y1,y2):
         arr[i][j]=0
 
-max_s=[]
+start_x,start_y,end_x,end_y=1000,1000,1000,1000
 
 for i in range(2000):
-    cnt=0
     for j in range(2000):
         if arr[i][j]==1:
-            cnt+=1
-    if cnt!=0:
-        max_s.append(cnt)
+            start_x=min(start_x,j)
+            start_y=min(start_x,i)
+            end_x=max(end_x,j)
+            end_y=max(end_y,i)
 
-ans=len(max_s)*max(max_s)
-print(ans)
+s=(end_x-start_x+1) * (end_y-start_y+1)
+print(s)

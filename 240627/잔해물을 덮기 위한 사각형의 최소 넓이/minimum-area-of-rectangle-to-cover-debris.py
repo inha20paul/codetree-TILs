@@ -34,8 +34,8 @@ for i in range(2000):
             end_x=max(end_x,j)
             end_y=max(end_y,i)
 
-if start_x==end_x or start_y==end_y:
+
+s=(end_x-start_x+1) * (end_y-start_y+1)
+if start_x==end_x and start_y==end_y:
     s=0
-else:
-    s=(end_x-start_x+1) * (end_y-start_y+1)
 print(s)

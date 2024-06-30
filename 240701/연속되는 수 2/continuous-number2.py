@@ -7,4 +7,4 @@ for i in range(N):
     if num in arr:
         cnt_arr[num]+=1
 
-print(max(cnt_arr-1))
+print(max(cnt_arr)-1)

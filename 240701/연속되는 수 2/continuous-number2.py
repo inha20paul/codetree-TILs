@@ -1,13 +1,15 @@
 N=int(input())
-arr=[]
-cnt_arr=[0]*1001
+arr=[-1]
+ans=[]
+cnt=1
 for i in range(N):
     num=int(input())
+    # 비교
+    if num==arr[-1]:
+        cnt+=1
+    else:
+        cnt=1
+    ans.append(cnt)
     arr.append(num)
-    if num in arr:
-        cnt_arr[num]+=1
 
-if len(arr)==1:
-    print(1)
-else:
-    print(max(cnt_arr))
+print(max(ans))

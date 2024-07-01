@@ -9,7 +9,7 @@ for i in range(n):
     else:
         cnt=0
     ans.append(cnt)
-    if arr[i+1]<=arr[i]:
+    if arr[i+1]<arr[i]:
         cnt=0
 
 

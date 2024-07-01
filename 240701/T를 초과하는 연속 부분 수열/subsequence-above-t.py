@@ -12,7 +12,7 @@ for i in range(n):
     if arr[i+1]<=arr[i]:
         cnt=0
 
-if max(ans)==1:
+if max(ans)<=1:
     print(0)
 else:
     print(max(ans))
